@@ -1,5 +1,3 @@
-const google_api_key = "AIzaSyCtoOOAPOiBMYAes89aTtDQqAODBv-rDrc";
+const google_api_key = "AIzaSyBPxs4-BNIsJHw6WSueZ9YC3i_iisLxQcY";
 
-export const youtube_api_key =
-  "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=" +
-  google_api_key;
+export const youtube_api_key = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=${google_api_key}`;
