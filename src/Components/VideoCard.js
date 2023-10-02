@@ -1,7 +1,7 @@
 import React from "react";
 
 const VideoCard = ({ info }) => {
-  console.log("prop", info);
+  // console.log("prop", info);
   const { snippet, statistics } = info;
   const { channelTitle, title, thumbnails } = snippet;
   return (
