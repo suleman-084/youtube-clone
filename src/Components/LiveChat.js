@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import ChatMessage from './ChatMessage'
 import { useDispatch, useSelector } from 'react-redux'
 import { addMessage } from '../Utils/chatSlice'
+import { generateRandomName, makeRandomMessage } from '../Utils/Helper'
 
 const LiveChat = () => {
   const dispatch = useDispatch()
@@ -10,8 +11,8 @@ const LiveChat = () => {
   useEffect(() => {
    const timer = setInterval(() => {
     dispatch(addMessage({
-      name:"sulemans",
-      message:"woww!!"
+      name:generateRandomName(),
+      message: makeRandomMessage(20),
     }))
 // console.log("api polling");
 
@@ -20,7 +21,7 @@ const LiveChat = () => {
 
   }, [])
   return (
-    <div className='w-full h-[600px] ml-2 p-2 border border-black bg-slate-300 rounded-lg overflow-y-scroll'>
+    <div className='w-full h-[600px] ml-2 p-2 border border-black bg-slate-300 rounded-lg overflow-y-scroll flex flex-col-reverse'>
        { chatMessages?.map((c, i)=><ChatMessage key={i} name={c.name} message={c.message}/>)}
      {/* <ChatMessage name="suleman" message="Amazing Live Chat!!"/> */}
    
