@@ -27,11 +27,7 @@ const WatchPage = () => {
         </div>
         <div className="w-full">
           <LiveChat/>
-
-        </div>
-      
-
-
+        </div> 
       </div>
       <CommentsContainer />
     </div>

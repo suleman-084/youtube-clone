@@ -7,7 +7,7 @@ const sore = configureStore({
   reducer: {
     app: appSlice,
     search: searchSlice,
-    chat:chatSlice,
+    chat: chatSlice,
   },
 });
 export default sore;
