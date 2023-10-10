@@ -4,3 +4,5 @@ export const youtube_api_key = `https://youtube.googleapis.com/youtube/v3/videos
 
 
 export const yotube_search_key = "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q="
+
+export const OFFSET_LIVE_CHAT = 10

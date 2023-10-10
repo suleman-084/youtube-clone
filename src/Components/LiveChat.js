@@ -12,7 +12,7 @@ const LiveChat = () => {
    const timer = setInterval(() => {
     dispatch(addMessage({
       name:generateRandomName(),
-      message: makeRandomMessage(20),
+      message: makeRandomMessage(15),
     }))
 // console.log("api polling");
 
