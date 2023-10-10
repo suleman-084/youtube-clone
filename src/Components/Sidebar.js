@@ -8,7 +8,7 @@ const Sidebar = () => {
   //early return
   if (!isMenuOpen) return null;
   return (
-    <div className="p-5 shadow-lg w-48 mt-[5rem] ">
+    <div className="p-2 shadow-lg w-48 mt-[5rem] ">
       <ul>
         <Link to="/">
           <li className="font-bold">Home</li>
